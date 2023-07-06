@@ -1,5 +1,5 @@
 export function ConfirmedOrder () {
   return (
-    <h1>Confirmação de Pagamento</h1>
+    <h1>Pedido confirmado</h1>
   )
 }
