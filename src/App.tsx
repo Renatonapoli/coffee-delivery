@@ -1,14 +1,12 @@
-import { Home } from "./pages/Home"
-import { ConfirmedOrder } from "./pages/ConfirmedOrder"
-import { Payment } from "./pages/Payment"
+import { Router } from "./Router"
+import {BrowserRouter} from 'react-router-dom'
 
 export function App () {
   return (
     <div>
-
-      <Home />
-      <Payment />
-      <ConfirmedOrder />
+      <BrowserRouter>
+      <Router />
+      </BrowserRouter>
     </div>
     )
 } 
