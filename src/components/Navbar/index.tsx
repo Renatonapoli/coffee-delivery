@@ -1,16 +1,20 @@
-import {ShoppingCart, Placeholder} from '@phosphor-icons/react'
+import { ShoppingCart, MapPin } from "@phosphor-icons/react";
 
-export function Navbar () {
+import { ContainerNavbar, ContainerLocationCart, Map, Cart } from "./styles";
+
+export function Navbar() {
   return (
-    <div>
+    <ContainerNavbar>
       <img src="../src/assets/logo.svg" alt="Logo da página" />
-
-      <div>
-        <Placeholder />
-        <span>Rio de Janeiro</span>
-        <ShoppingCart />
-      </div>
-
-    </div>
-  )
+      <ContainerLocationCart>
+        <Map>
+          <MapPin size={22} />
+          <p>Nova Iguaçu, RJ</p>
+        </Map>
+        <Cart>
+          <ShoppingCart size={22} />
+        </Cart>
+      </ContainerLocationCart>
+    </ContainerNavbar>
+  );
 }
