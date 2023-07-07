@@ -1,5 +1,16 @@
+import {ShoppingCart, Placeholder} from '@phosphor-icons/react'
+
 export function Navbar () {
   return (
-    <h1>Navbar</h1>
+    <div>
+      <img src="../src/assets/logo.svg" alt="Logo da página" />
+
+      <div>
+        <Placeholder />
+        <span>Rio de Janeiro</span>
+        <ShoppingCart />
+      </div>
+
+    </div>
   )
 }
