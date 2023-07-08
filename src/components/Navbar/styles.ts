@@ -34,10 +34,12 @@ font-size: 0.75rem;
 
 `
 
-export const Cart = styled.span`
+export const Cart = styled.button`
 width: 2.375rem;
 height: 2.375rem;
 border-radius: 6px;
+border: none;
+cursor: pointer;
 
 background: ${(props) => props.theme['yellow-ligth']};
 
