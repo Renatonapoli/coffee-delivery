@@ -1,5 +1,7 @@
+import { Card } from "./components/Card";
 import {
   CoffeeContainer,
+  ContainerCards,
   ContainerHeader,
   ContainerHome,
   ContainerInformationsOne,
@@ -56,10 +58,13 @@ export function Home() {
             </CoffeeContainer>
           </ContainerInformationsTwo>
         </ContentCoffe>
-        <img src="../src/assets/ilustrations/coffe-delivery.svg" />
+        <img src="../src/assets/illustrations/coffe-delivery.svg" />
       </ContainerHeader>
 
       <h2>Nossos Cafés</h2>
+      <ContainerCards>
+        <Card />
+      </ContainerCards>
     </ContainerHome>
   );
 }

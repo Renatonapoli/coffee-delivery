@@ -145,3 +145,8 @@ export const CoffeeContainer = styled.div`
     color: ${(props) => props.theme["gray-700"]};
   }
 `;
+
+export const ContainerCards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
