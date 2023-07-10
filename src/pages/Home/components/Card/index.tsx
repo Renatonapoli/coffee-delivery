@@ -48,9 +48,9 @@ export function Card({
         <Header>
           <img src={src} />
           <TypeCoffe>
-            <Traditional>{traditional}</Traditional>
-            <IceCream>{iceCream}</IceCream>
-            <Alcoholic>{alcoholic}</Alcoholic>
+            {traditional && <Traditional>{traditional}</Traditional>}
+            {iceCream && <IceCream>{iceCream}</IceCream>}
+            {alcoholic && <Alcoholic>{alcoholic}</Alcoholic>}
           </TypeCoffe>
         </Header>
         <ContentCard>

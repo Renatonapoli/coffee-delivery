@@ -5,8 +5,6 @@ export const ContainerNavbar = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  margin: 2rem 0;
-
   img {
     font-size: 2.5rem;
   }

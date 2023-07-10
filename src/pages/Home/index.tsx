@@ -1,6 +1,20 @@
 import { Card } from "./components/Card";
 import { ShoppingCart, Timer, Coffee, Package } from "@phosphor-icons/react";
-import CoffeExpress from "../../assets/illustrations/expresso-tradicional.png";
+import CoffeExpress from "../../assets/illustrations/expresso-tradicional.svg";
+import CoffeAmerican from "../../assets/illustrations/expresso-americano.svg";
+import CoffeCreamy from "../../assets/illustrations/expresso-cremoso.svg";
+import CoffeIceCream from "../../assets/illustrations/expresso-gelado.svg";
+import CoffeWithMilk from "../../assets/illustrations/cafe-com-leite.svg";
+import Latte from "../../assets/illustrations/latte.svg";
+import Capuccino from "../../assets/illustrations/capuccino.svg";
+import Macchiato from "../../assets/illustrations/macchiato.svg";
+import Mocaccino from "../../assets/illustrations/mocaccino.svg";
+import HotChocolate from "../../assets/illustrations/chocolate-quente.svg";
+import Cuban from "../../assets/illustrations/cubano.svg";
+import Hawaiian from "../../assets/illustrations/havaiano.svg";
+import Arabic from "../../assets/illustrations/arabe.svg";
+import Irish from "../../assets/illustrations/irlandes.svg";
+
 import {
   CoffeeContainer,
   ContainerCards,
@@ -75,49 +89,149 @@ export function Home() {
           iceCream={""}
           alcoholic={""}
         />
+
         <Card
-          src={CoffeExpress}
+          src={CoffeAmerican}
           traditional={"Tradicional"}
-          typeCoffe={"Expresso Tradicional"}
-          fraseCoffe={"O tradicional café feito com água"}
-          subfraseCoffe={"quente e grãos moídos"}
+          typeCoffe={"Expresso Americano"}
+          fraseCoffe={"Expresso diluído, menos intenso"}
+          subfraseCoffe={"que o tradicional"}
           coin={"R$"}
           price={"9,90"}
           iceCream={""}
           alcoholic={""}
         />
         <Card
-          src={CoffeExpress}
+          src={CoffeCreamy}
           traditional={"Tradicional"}
-          typeCoffe={"Expresso Tradicional"}
-          fraseCoffe={"O tradicional café feito com água"}
-          subfraseCoffe={"quente e grãos moídos"}
+          typeCoffe={"Expresso Cremoso"}
+          fraseCoffe={"Café tradicional com"}
+          subfraseCoffe={"espuma cremosa"}
           coin={"R$"}
           price={"9,90"}
           iceCream={""}
           alcoholic={""}
         />
         <Card
-          src={CoffeExpress}
+          src={CoffeIceCream}
           traditional={"Tradicional"}
-          typeCoffe={"Expresso Tradicional"}
-          fraseCoffe={"O tradicional café feito com água"}
-          subfraseCoffe={"quente e grãos moídos"}
+          iceCream={"Gelado"}
+          alcoholic={""}
+          typeCoffe={"Expresso Gelado"}
+          fraseCoffe={"Bebida preparada com café"}
+          subfraseCoffe={"expresso e cubos de gelo"}
           coin={"R$"}
           price={"9,90"}
-          iceCream={""}
-          alcoholic={""}
         />
         <Card
-          src={CoffeExpress}
+          src={CoffeWithMilk}
           traditional={"Tradicional"}
-          typeCoffe={"Expresso Tradicional"}
-          fraseCoffe={"O tradicional café feito com água"}
-          subfraseCoffe={"quente e grãos moídos"}
+          iceCream={"Com Leite"}
+          alcoholic={""}
+          typeCoffe={"Café com Leite"}
+          fraseCoffe={"Meio a meio de expresso"}
+          subfraseCoffe={"tradicional com leite vaporizado"}
           coin={"R$"}
           price={"9,90"}
+        />
+        <Card
+          src={Latte}
+          traditional={"Tradicional"}
+          iceCream={"Com Leite"}
+          alcoholic={""}
+          typeCoffe={"Latte"}
+          fraseCoffe={"Uma dose de café expresso com o"}
+          subfraseCoffe={"dobro de leite e espuma cremosa"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Capuccino}
+          traditional={"Tradicional"}
+          iceCream={"Com Leite"}
+          alcoholic={""}
+          typeCoffe={"Capuccino"}
+          fraseCoffe={"Bebida com canela feita de doses"}
+          subfraseCoffe={"iguais de café, leite e espuma"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Macchiato}
+          traditional={"Tradicional"}
+          iceCream={"Com Leite"}
+          alcoholic={""}
+          typeCoffe={"Macchiato"}
+          fraseCoffe={"Café expresso misturado com um"}
+          subfraseCoffe={"pouco de leite quente e espuma"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Mocaccino}
+          traditional={"Tradicional"}
+          iceCream={"Com Leite"}
+          alcoholic={""}
+          typeCoffe={"Mocaccino"}
+          fraseCoffe={"Café expresso com calda de"}
+          subfraseCoffe={"chocolate, pouco leite e espuma"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={HotChocolate}
+          traditional={"Especial"}
+          iceCream={"Com Leite"}
+          alcoholic={""}
+          typeCoffe={"Chocolate Quente"}
+          fraseCoffe={"Bebida feita com chocolate"}
+          subfraseCoffe={"dissolvido no leite quente e café"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Cuban}
+          traditional={"Especial"}
+          alcoholic={"Alcoólico"}
+          iceCream={"Gelado"}
+          typeCoffe={"Cubano"}
+          fraseCoffe={"Drink gelado de café expresso"}
+          subfraseCoffe={"com rum, creme de leite e hortelã"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Hawaiian}
+          traditional={"Especial"}
           iceCream={""}
           alcoholic={""}
+          typeCoffe={"Havaiano"}
+          fraseCoffe={"Bebida adocicada preparada com"}
+          subfraseCoffe={"café e leite de coco"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Arabic}
+          traditional={"Especial"}
+          iceCream={""}
+          alcoholic={""}
+          typeCoffe={"Árabe"}
+          fraseCoffe={"Bebida preparada com grãos de"}
+          subfraseCoffe={"café árabe e especiarias"}
+          coin={"R$"}
+          price={"9,90"}
+        />
+        <Card
+          src={Irish}
+          traditional={""}
+          iceCream={"Especial"}
+          alcoholic={"Alcoólico"}
+          typeCoffe={"Irlândes"}
+          fraseCoffe={"Bebida a base de café, uísque"}
+          subfraseCoffe={"irlandês, açucar e chantilly"}
+          coin={"R$"}
+          price={"9,90"}
         />
       </ContainerCards>
     </ContainerHome>

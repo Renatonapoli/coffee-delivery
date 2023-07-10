@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex: content;
-  margin: 3.5rem 0 -0.8rem auto;
+  margin: 3.4rem 2rem -0.8rem 0;
+  justify-content: flex-start;
 `;
 
 export const CardContainer = styled.div`
+  flex: 0 0 100%;
   width: 16rem;
   height: 19.375rem;
   border-radius: 6px 36px;
+  padding-right: -2rem;
 
   background: ${(props) => props.theme["gray-200"]};
 
