@@ -4,8 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex: content;
-  margin-inline-start: calc(100vw - 6rem);
-  margin: 2rem auto;
+  margin: 3.5rem 0 -0.8rem auto;
 `;
 
 export const CardContainer = styled.div`
