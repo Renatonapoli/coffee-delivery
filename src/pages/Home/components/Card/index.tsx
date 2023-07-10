@@ -16,6 +16,7 @@ import {
   Traditional,
   TypeCoffe,
   IceCream,
+  Container,
 } from "./styles";
 
 interface PropsCard {
@@ -42,46 +43,48 @@ export function Card({
   price,
 }: PropsCard) {
   return (
-    <CardContainer>
-      <Header>
-        <img src={src} />
-        <TypeCoffe>
-          <Traditional>{traditional}</Traditional>
-          <IceCream>{iceCream}</IceCream>
-          <Alcoholic>{alcoholic}</Alcoholic>
-        </TypeCoffe>
-      </Header>
-      <ContentCard>
-        <Title>{typeCoffe}</Title>
+    <Container>
+      <CardContainer>
+        <Header>
+          <img src={src} />
+          <TypeCoffe>
+            <Traditional>{traditional}</Traditional>
+            <IceCream>{iceCream}</IceCream>
+            <Alcoholic>{alcoholic}</Alcoholic>
+          </TypeCoffe>
+        </Header>
+        <ContentCard>
+          <Title>{typeCoffe}</Title>
 
-        <Subtitle>
-          <span>{fraseCoffe} </span>
-          <span>{subfraseCoffe}</span>
-        </Subtitle>
-      </ContentCard>
+          <Subtitle>
+            <span>{fraseCoffe} </span>
+            <span>{subfraseCoffe}</span>
+          </Subtitle>
+        </ContentCard>
 
-      <CardFooter>
-        <ContentCounter>
-          <CoffeValue>
-            <span>{coin}</span>
-            <p>{price}</p>
-          </CoffeValue>
+        <CardFooter>
+          <ContentCounter>
+            <CoffeValue>
+              <span>{coin}</span>
+              <p>{price}</p>
+            </CoffeValue>
 
-          <Counter>
-            <ButtonNegative>
-              <Minus size={14} color="purple" />
-            </ButtonNegative>
-            <span>1</span>
-            <ButtonPositive>
-              <Plus size={14} color="purple" />
-            </ButtonPositive>
-          </Counter>
+            <Counter>
+              <ButtonNegative>
+                <Minus size={14} color="purple" />
+              </ButtonNegative>
+              <span>1</span>
+              <ButtonPositive>
+                <Plus size={14} color="purple" />
+              </ButtonPositive>
+            </Counter>
 
-          <CartShopping>
-            <ShoppingCart size={22} color="white" weight="fill" />
-          </CartShopping>
-        </ContentCounter>
-      </CardFooter>
-    </CardContainer>
+            <CartShopping>
+              <ShoppingCart size={22} color="white" weight="fill" />
+            </CartShopping>
+          </ContentCounter>
+        </CardFooter>
+      </CardContainer>
+    </Container>
   );
 }

@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex: content;
+  margin-inline-start: calc(100vw - 6rem);
+  margin: 2rem auto;
+`;
+
 export const CardContainer = styled.div`
   width: 16rem;
   height: 19.375rem;
-  margin-top: 3.375rem;
-  margin-bottom: 2.5rem;
   border-radius: 6px 36px;
 
   background: ${(props) => props.theme["gray-200"]};

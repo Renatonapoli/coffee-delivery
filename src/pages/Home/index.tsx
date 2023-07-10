@@ -75,6 +75,50 @@ export function Home() {
           iceCream={""}
           alcoholic={""}
         />
+        <Card
+          src={CoffeExpress}
+          traditional={"Tradicional"}
+          typeCoffe={"Expresso Tradicional"}
+          fraseCoffe={"O tradicional café feito com água"}
+          subfraseCoffe={"quente e grãos moídos"}
+          coin={"R$"}
+          price={"9,90"}
+          iceCream={""}
+          alcoholic={""}
+        />
+        <Card
+          src={CoffeExpress}
+          traditional={"Tradicional"}
+          typeCoffe={"Expresso Tradicional"}
+          fraseCoffe={"O tradicional café feito com água"}
+          subfraseCoffe={"quente e grãos moídos"}
+          coin={"R$"}
+          price={"9,90"}
+          iceCream={""}
+          alcoholic={""}
+        />
+        <Card
+          src={CoffeExpress}
+          traditional={"Tradicional"}
+          typeCoffe={"Expresso Tradicional"}
+          fraseCoffe={"O tradicional café feito com água"}
+          subfraseCoffe={"quente e grãos moídos"}
+          coin={"R$"}
+          price={"9,90"}
+          iceCream={""}
+          alcoholic={""}
+        />
+        <Card
+          src={CoffeExpress}
+          traditional={"Tradicional"}
+          typeCoffe={"Expresso Tradicional"}
+          fraseCoffe={"O tradicional café feito com água"}
+          subfraseCoffe={"quente e grãos moídos"}
+          coin={"R$"}
+          price={"9,90"}
+          iceCream={""}
+          alcoholic={""}
+        />
       </ContainerCards>
     </ContainerHome>
   );
