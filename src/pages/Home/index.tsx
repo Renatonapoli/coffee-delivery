@@ -1,4 +1,6 @@
 import { Card } from "./components/Card";
+import { ShoppingCart, Timer, Coffee, Package } from "@phosphor-icons/react";
+import CoffeExpress from "../../assets/illustrations/expresso-tradicional.png";
 import {
   CoffeeContainer,
   ContainerCards,
@@ -13,7 +15,6 @@ import {
   TimerContainer,
   Title,
 } from "./styles";
-import { ShoppingCart, Timer, Coffee, Package } from "@phosphor-icons/react";
 
 export function Home() {
   return (
@@ -63,7 +64,17 @@ export function Home() {
 
       <h2>Nossos Cafés</h2>
       <ContainerCards>
-        <Card />
+        <Card
+          src={CoffeExpress}
+          traditional={"Tradicional"}
+          typeCoffe={"Expresso Tradicional"}
+          fraseCoffe={"O tradicional café feito com água"}
+          subfraseCoffe={"quente e grãos moídos"}
+          coin={"R$"}
+          price={"9,90"}
+          iceCream={""}
+          alcoholic={""}
+        />
       </ContainerCards>
     </ContainerHome>
   );

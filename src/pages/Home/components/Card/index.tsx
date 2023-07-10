@@ -1,5 +1,6 @@
 import { ShoppingCart, Plus, Minus } from "@phosphor-icons/react";
 import {
+  Alcoholic,
   ButtonNegative,
   ButtonPositive,
   CardContainer,
@@ -12,30 +13,58 @@ import {
   Header,
   Subtitle,
   Title,
+  Traditional,
   TypeCoffe,
+  IceCream,
 } from "./styles";
 
-export function Card() {
+interface PropsCard {
+  src: string;
+  traditional: string;
+  iceCream: string;
+  alcoholic: string;
+  typeCoffe: string;
+  fraseCoffe: string;
+  subfraseCoffe: string;
+  coin: string;
+  price: string;
+}
+
+export function Card({
+  src,
+  traditional,
+  iceCream,
+  alcoholic,
+  typeCoffe,
+  fraseCoffe,
+  subfraseCoffe,
+  coin,
+  price,
+}: PropsCard) {
   return (
     <CardContainer>
       <Header>
-        <img src="../../src/assets/illustrations/expresso-tradicional.png" />
-        <TypeCoffe>Tradicional</TypeCoffe>
+        <img src={src} />
+        <TypeCoffe>
+          <Traditional>{traditional}</Traditional>
+          <IceCream>{iceCream}</IceCream>
+          <Alcoholic>{alcoholic}</Alcoholic>
+        </TypeCoffe>
       </Header>
       <ContentCard>
-        <Title>Expresso Tradicional</Title>
+        <Title>{typeCoffe}</Title>
 
         <Subtitle>
-          <span>O tradicional café feito com água </span>
-          <span>quente e grãos moídos</span>
+          <span>{fraseCoffe} </span>
+          <span>{subfraseCoffe}</span>
         </Subtitle>
       </ContentCard>
 
       <CardFooter>
         <ContentCounter>
           <CoffeValue>
-            <span>R$</span>
-            <p>9,90</p>
+            <span>{coin}</span>
+            <p>{price}</p>
           </CoffeValue>
 
           <Counter>

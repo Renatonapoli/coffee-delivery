@@ -31,26 +31,30 @@ export const TypeCoffe = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.75rem;
+  margin: 0.35rem;
+`;
 
-  padding: 0.5rem 1rem;
+export const Traditional = styled.span`
+  padding: 0.5rem 0.8rem;
   border-radius: 100px;
+  margin: 0.1rem;
 
   background: ${(props) => props.theme["yellow-ligth"]};
 
   font-size: 0.625rem;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 130%;
 
   color: ${(props) => props.theme["yellow-dark"]};
 `;
+export const IceCream = styled(Traditional)``;
+export const Alcoholic = styled(Traditional)``;
 
 export const ContentCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   flex-shrink: 0;
 `;
 
