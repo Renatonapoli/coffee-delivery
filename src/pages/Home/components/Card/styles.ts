@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex: 0 0 25%;
-  margin: 3.4rem 0rem -0.8rem 0;
+  margin: 3.4rem 0rem -1rem 0;
   justify-content: flex-start;
 `;
 
 export const CardContainer = styled.div`
   width: 16rem;
   height: 19.375rem;
+  margin-left: 0.5rem;
   border-radius: 6px 36px;
-  padding-right: -2rem;
-
+  padding-right: 1.5rem;
   background: ${(props) => props.theme["gray-200"]};
 
   display: flex;
@@ -26,10 +26,12 @@ export const Header = styled.div`
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
+  justify-content: center;
   img {
     width: 7.5rem;
     height: 7.5rem;
     margin-top: -1rem;
+    margin-left: 1.5rem;
   }
 `;
 
@@ -37,7 +39,8 @@ export const TypeCoffe = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.35rem;
+  margin-top: 0.35rem;
+  margin-left: 1.5rem;
 `;
 
 export const Traditional = styled.span`
@@ -61,6 +64,7 @@ export const ContentCard = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 0.5rem;
+  margin-left: 1.5rem;
   flex-shrink: 0;
 `;
 
@@ -94,6 +98,7 @@ export const CardFooter = styled.div`
   margin-top: 2rem;
   justify-content: center;
   align-items: center;
+  margin-left: 1.5rem;
 `;
 
 export const ContentCounter = styled.div`

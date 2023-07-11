@@ -7,7 +7,6 @@ export const ContainerHome = styled.div`
 
   max-width: 74rem;
   width: 100%;
-  padding: 2rem 5rem;
 
   padding: 4rem 5rem;
 
@@ -17,6 +16,7 @@ export const ContainerHome = styled.div`
     font-family: "Baloo 2";
     font-weight: 800;
     font-size: 2rem;
+    margin-left: 0.2rem;
   }
 `;
 
