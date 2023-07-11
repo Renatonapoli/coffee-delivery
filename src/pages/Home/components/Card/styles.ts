@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  margin: 3.4rem 2rem -0.8rem 0;
+  flex: 0 0 25%;
+  margin: 3.4rem 0rem -0.8rem 0;
   justify-content: flex-start;
 `;
 
 export const CardContainer = styled.div`
-  flex: 0 0 100%;
   width: 16rem;
   height: 19.375rem;
   border-radius: 6px 36px;

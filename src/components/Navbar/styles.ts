@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const ContainerNavbar = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  padding: 2rem 10rem;
+  max-width: 74rem;
+  width: 100%;
+  padding: 2rem 5rem;
 
   position: fixed;
   top: 0;

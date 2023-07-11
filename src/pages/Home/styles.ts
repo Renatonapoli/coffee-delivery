@@ -5,6 +5,12 @@ export const ContainerHome = styled.div`
   flex-direction: column;
   margin-top: 5.9rem;
 
+  max-width: 74rem;
+  width: 100%;
+  padding: 2rem 5rem;
+
+  padding: 4rem 5rem;
+
   h2 {
     margin-top: 8.75rem;
     color: ${(props) => props.theme["gray-800"]};
@@ -32,7 +38,7 @@ export const Title = styled.h1`
   font-family: "Baloo 2";
   font-weight: 800;
 
-  text-shadow: 0em 0.1em 0.1em ${(props) => props.theme["gray-600"]};
+  text-shadow: 0em 0.1em 0.1em ${(props) => props.theme["gray-500"]};
 
   line-height: 130%;
 `;
@@ -126,7 +132,7 @@ export const TimerContainer = styled.div`
 export const CoffeeContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 2.5rem;
+  margin-left: 2.1rem;
 
   span {
     display: flex;
@@ -149,4 +155,9 @@ export const CoffeeContainer = styled.div`
 export const ContainerCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  max-width: 74rem;
+  width: 100%;
+
+  padding-top: 2rem;
 `;
