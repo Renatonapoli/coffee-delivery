@@ -5,6 +5,7 @@ export const ContainerNavbar = styled.div`
   justify-content: space-between;
   max-width: 74rem;
   width: 100%;
+
   padding: 2rem 5rem;
 
   position: fixed;
