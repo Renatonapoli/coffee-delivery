@@ -3,7 +3,13 @@ import styled from "styled-components";
 export const ContainerNavbar = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 80%;
+  padding: 2rem 10rem;
+
+  position: fixed;
+  top: 0;
+
+  background: ${(props) => props.theme.white};
 
   img {
     font-size: 2.5rem;
