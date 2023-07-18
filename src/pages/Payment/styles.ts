@@ -20,8 +20,9 @@ export const ContainerAdressPayment = styled.div`
   }
 `;
 export const Adress = styled.div`
-  width: 40rem;
-  height: 23.25rem;
+  display: flex;
+  width: 35rem;
+  height: 18.25rem;
   padding: 2.5rem;
   flex-direction: column;
   align-items: flex-start;
@@ -32,9 +33,43 @@ export const Adress = styled.div`
   background: ${(props) => props.theme["gray-200"]};
 `;
 
+export const Section = styled.section`
+  display: flex;
+  align-items: top;
+
+  div {
+    margin-left: 0.5rem;
+
+    h4 {
+      font-weight: 400;
+      font-style: normal;
+      line-height: 130%;
+
+      color: ${(props) => props.theme["gray-800"]};
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 130%;
+
+      color: ${(props) => props.theme["gray-700"]};
+    }
+  }
+`;
+
+export const ContainerForm = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
 export const PaymentCoffes = styled.div`
-  width: 40rem;
-  height: 12.37rem;
+  width: 35rem;
+  height: 7.9375rem;
   padding: 2.5rem;
 
   margin-top: 0.75rem;
@@ -62,7 +97,7 @@ export const CoffesSelections = styled.div`
 export const ItemSelections = styled.div`
   display: flex;
   width: 28rem;
-  height: 31.12rem;
+  height: 31.125rem;
   margin-left: 2rem;
   flex-direction: column;
   align-items: flex-start;
