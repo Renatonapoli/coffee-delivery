@@ -10,7 +10,7 @@ import {
   ContainerForm,
   ButtonsFormPayment,
 } from "./styles";
-import { CreditCard } from "@phosphor-icons/react";
+import * as Icon from "@phosphor-icons/react";
 import { Input } from "./components/inputText";
 import { ButtonPayment } from "./components/Button";
 
@@ -82,9 +82,18 @@ export function Payment() {
               </div>
             </Section>
             <ButtonsFormPayment>
-              <ButtonPayment title={"Cartão de crédito"} />
-              <ButtonPayment title={"Cartão de Débito"} />
-              <ButtonPayment title={"Dinheiro"} />
+              <ButtonPayment
+                title={"Cartão de crédito"}
+                icon={<Icon.CreditCard size={16} color="#8047f8" />}
+              />
+              <ButtonPayment
+                title={"Cartão de Débito"}
+                icon={<Icon.Bank size={16} color="#8047f8" />}
+              />
+              <ButtonPayment
+                title={"Dinheiro"}
+                icon={<Icon.Money size={16} color="#8047f8" />}
+              />
             </ButtonsFormPayment>
           </PaymentCoffes>
         </ContainerAdressPayment>
