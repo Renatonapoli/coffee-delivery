@@ -1,4 +1,4 @@
-import { MapPinLine } from "@phosphor-icons/react";
+import { MapPinLine, CurrencyDollar } from "@phosphor-icons/react";
 import {
   Adress,
   CoffesSelections,
@@ -8,8 +8,11 @@ import {
   PaymentCoffes,
   Section,
   ContainerForm,
+  ButtonsFormPayment,
 } from "./styles";
+import { CreditCard } from "@phosphor-icons/react";
 import { Input } from "./components/inputText";
+import { ButtonPayment } from "./components/Button";
 
 export function Payment() {
   return (
@@ -67,7 +70,23 @@ export function Payment() {
               </div>
             </ContainerForm>
           </Adress>
-          <PaymentCoffes></PaymentCoffes>
+          <PaymentCoffes>
+            <Section>
+              <CurrencyDollar size={22} color="#8047f8" />
+              <div>
+                <h4>Pagamento</h4>
+                <p>
+                  O pagamento é feito na entrega. Escolha a forma que deseja
+                  pagar
+                </p>
+              </div>
+            </Section>
+            <ButtonsFormPayment>
+              <ButtonPayment title={"Cartão de crédito"} />
+              <ButtonPayment title={"Cartão de Débito"} />
+              <ButtonPayment title={"Dinheiro"} />
+            </ButtonsFormPayment>
+          </PaymentCoffes>
         </ContainerAdressPayment>
 
         <CoffesSelections>

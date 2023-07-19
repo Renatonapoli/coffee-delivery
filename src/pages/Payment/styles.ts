@@ -103,3 +103,9 @@ export const ItemSelections = styled.div`
   border-radius: 6px 44px;
   background: ${(props) => props.theme["gray-200"]};
 `;
+
+export const ButtonsFormPayment = styled.div`
+  display: flex;
+  margin: 2rem auto;
+  justify-content: space-between;
+`;
