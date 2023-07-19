@@ -3,10 +3,8 @@ import styled from "styled-components";
 export const ContainerHome = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 5.9rem;
-
-  max-width: 74rem;
-  width: 100%;
+  justify-content: center;
+  margin: auto;
 
   padding: 4rem 5rem;
 

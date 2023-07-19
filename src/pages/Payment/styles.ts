@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ContainerAdressPaymentItemSelect = styled.div`
   display: flex;
-  padding: 0rem 5rem;
   margin: auto;
 `;
 export const ContainerAdressPayment = styled.div`
@@ -21,8 +20,6 @@ export const ContainerAdressPayment = styled.div`
 `;
 export const Adress = styled.div`
   display: flex;
-  width: 35rem;
-  height: 18.25rem;
   padding: 2.5rem;
   flex-direction: column;
   align-items: flex-start;
@@ -84,7 +81,7 @@ export const PaymentCoffes = styled.div`
 
 export const CoffesSelections = styled.div`
   h1 {
-    margin: 2.5rem 0rem 0.95rem 2rem;
+    margin: 2.5rem 0rem 0.95rem 5rem;
 
     font-family: "Baloo 2";
     font-size: 1.125rem;
@@ -98,7 +95,7 @@ export const ItemSelections = styled.div`
   display: flex;
   width: 28rem;
   height: 31.125rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;

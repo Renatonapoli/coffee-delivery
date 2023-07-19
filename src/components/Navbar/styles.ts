@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const ContainerNavbar = styled.div`
   display: flex;
-  justify-content: space-between;
-  max-width: 74rem;
-  width: 100%;
-
+  width: calc(100vw - 11rem);
   padding: 2rem 5rem;
-
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
 
@@ -16,17 +14,29 @@ export const ContainerNavbar = styled.div`
   img {
     font-size: 2.5rem;
   }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    max-width: 74rem;
+    width: 100%;
+  }
 `;
 
 export const ContainerLocationCart = styled.div`
   display: flex;
+
   align-items: center;
+  margin: auto;
 `;
 
 export const Map = styled.span`
   display: flex;
   align-items: center;
   margin-right: 0.8rem;
+  margin-left: auto;
 
   width: 8.938rem;
   height: 2.375rem;
