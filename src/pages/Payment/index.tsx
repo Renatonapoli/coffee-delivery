@@ -13,6 +13,7 @@ import {
 import * as Icon from "@phosphor-icons/react";
 import { Input } from "./components/inputText";
 import { ButtonPayment } from "./components/Button";
+import { Coffe } from "./components/CoffeSelected";
 
 export function Payment() {
   return (
@@ -100,7 +101,9 @@ export function Payment() {
 
         <CoffesSelections>
           <h1>Cafés selecionados</h1>
-          <ItemSelections></ItemSelections>
+          <ItemSelections>
+            <Coffe />
+          </ItemSelections>
         </CoffesSelections>
       </ContainerAdressPaymentItemSelect>
     </>

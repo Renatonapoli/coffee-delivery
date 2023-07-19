@@ -65,10 +65,7 @@ export const ContainerForm = styled.div`
 `;
 
 export const PaymentCoffes = styled.div`
-  width: 35rem;
-  height: 7.9375rem;
   padding: 2.5rem;
-
   margin-top: 0.75rem;
   flex-direction: column;
   align-items: flex-start;
@@ -95,6 +92,7 @@ export const ItemSelections = styled.div`
   display: flex;
   width: 28rem;
   height: 31.125rem;
+  padding: 2.5rem;
   margin-left: 5rem;
   flex-direction: column;
   align-items: flex-start;
