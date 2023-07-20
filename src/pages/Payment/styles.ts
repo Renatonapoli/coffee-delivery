@@ -78,7 +78,7 @@ export const PaymentCoffes = styled.div`
 
 export const CoffesSelections = styled.div`
   h1 {
-    margin: 2.5rem 0rem 0.95rem 5rem;
+    margin: 2.5rem 0rem 0.95rem 2rem;
 
     font-family: "Baloo 2";
     font-size: 1.125rem;
@@ -90,10 +90,10 @@ export const CoffesSelections = styled.div`
 
 export const ItemSelections = styled.div`
   display: flex;
-  width: 28rem;
-  height: 31.125rem;
+  width: 23rem;
+
   padding: 2.5rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
