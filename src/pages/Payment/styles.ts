@@ -4,6 +4,7 @@ export const ContainerAdressPaymentItemSelect = styled.div`
   display: flex;
   margin: auto;
 `;
+
 export const ContainerAdressPayment = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@ export const ContainerAdressPayment = styled.div`
     color: ${(props) => props.theme["gray-800"]};
   }
 `;
+
 export const Adress = styled.div`
   display: flex;
   padding: 2.5rem;
