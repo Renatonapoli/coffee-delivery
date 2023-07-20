@@ -210,4 +210,6 @@ export const ButtonConfirmedOrder = styled.button`
   text-transform: uppercase;
 
   color: ${(props) => props.theme.white};
+
+  cursor: pointer;
 `;
