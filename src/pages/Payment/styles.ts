@@ -107,3 +107,107 @@ export const ButtonsFormPayment = styled.div`
   margin: 2rem auto;
   justify-content: space-between;
 `;
+
+export const SumItems = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  p {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    color: ${(props) => props.theme["gray-700"]};
+  }
+
+  span {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    color: ${(props) => props.theme["gray-700"]};
+  }
+`;
+
+export const Delivery = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  p {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    color: ${(props) => props.theme["gray-700"]};
+  }
+
+  span {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+
+    color: ${(props) => props.theme["gray-700"]};
+  }
+`;
+
+export const ResultSum = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  p {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+
+    color: ${(props) => props.theme["gray-800"]};
+  }
+
+  span {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+
+    color: ${(props) => props.theme["gray-800"]};
+  }
+`;
+
+export const ButtonConfirmedOrder = styled.button`
+  display: flex;
+  padding: 0.875rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+
+  border: none;
+  border-radius: 6px;
+
+  background: ${(props) => props.theme.yellow};
+
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: uppercase;
+
+  color: ${(props) => props.theme.white};
+`;

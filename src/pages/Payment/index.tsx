@@ -9,6 +9,10 @@ import {
   Section,
   ContainerForm,
   ButtonsFormPayment,
+  SumItems,
+  Delivery,
+  ResultSum,
+  ButtonConfirmedOrder,
 } from "./styles";
 import * as Icon from "@phosphor-icons/react";
 import { Input } from "./components/inputText";
@@ -103,6 +107,21 @@ export function Payment() {
           <h1>Cafés selecionados</h1>
           <ItemSelections>
             <Coffe />
+            <Coffe />
+
+            <SumItems>
+              <p>Total de Items</p>
+              <span>R$ 29,70</span>
+            </SumItems>
+            <Delivery>
+              <p>Entrega</p>
+              <span>R$ 3,50</span>
+            </Delivery>
+            <ResultSum>
+              <p>Total</p>
+              <span>R$ 33,20</span>
+            </ResultSum>
+            <ButtonConfirmedOrder>Confirmar pedido</ButtonConfirmedOrder>
           </ItemSelections>
         </CoffesSelections>
       </ContainerAdressPaymentItemSelect>
