@@ -2,10 +2,17 @@ import { MapPinLine, Timer, CurrencyDollar } from "@phosphor-icons/react";
 import {
   CardInformations,
   ContainerConfirmed,
+  DeliveryAdress,
+  DeliveryTime,
   Header,
   Ilustration,
+  InformationPayment,
   Section,
+  SectionCurrencyDollar,
+  SectionDeliveryAdress,
+  SectionTimer,
 } from "./styles";
+
 export function ConfirmedOrder() {
   return (
     <ContainerConfirmed>
@@ -15,31 +22,38 @@ export function ConfirmedOrder() {
 
         <CardInformations>
           <Section>
-            <div>
-              <MapPinLine />
-            </div>
-            <div>
-              <p>Entrega em Rua João Daniel Martinelli, 102</p>
+            <SectionDeliveryAdress>
+              <MapPinLine size={16} color="white" weight="fill" />
+            </SectionDeliveryAdress>
+            <DeliveryAdress>
+              <p>
+                Entrega em <strong>Rua João Daniel Martinelli, 102</strong>
+              </p>
               <span>Farrapos - Porto Alegre, RS</span>
-            </div>
+            </DeliveryAdress>
           </Section>
           <Section>
-            <div>
-              <Timer />
-            </div>
-            <div>
-              <p>Entrega em Rua João Daniel Martinelli, 102</p>
-              <span>Farrapos - Porto Alegre, RS</span>
-            </div>
+            <SectionTimer>
+              <Timer size={16} color="white" weight="fill" />
+            </SectionTimer>
+
+            <DeliveryTime>
+              <p>Previsão de Entrega</p>
+              <span>
+                <strong>20 min - 30 min</strong>
+              </span>
+            </DeliveryTime>
           </Section>
           <Section>
-            <div>
-              <CurrencyDollar />
-            </div>
-            <div>
-              <p>Entrega em Rua João Daniel Martinelli, 102</p>
-              <span>Farrapos - Porto Alegre, RS</span>
-            </div>
+            <SectionCurrencyDollar>
+              <CurrencyDollar size={16} color="white" />
+            </SectionCurrencyDollar>
+            <InformationPayment>
+              <p>Pagamento na entrega</p>
+              <span>
+                <strong>Cartão de crédito</strong>
+              </span>
+            </InformationPayment>
           </Section>
         </CardInformations>
       </Header>
