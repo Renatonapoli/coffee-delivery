@@ -45,11 +45,11 @@ export function Card({
 }: PropsCard) {
   const [quantity, setQuantity] = useState(0);
 
-  const incrementQuantity = () => {
+  const increaseQuantity = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
   };
 
-  const decrementQuantity = () => {
+  const decreaseQuantity = () => {
     if (quantity > 0) {
       setQuantity((prevQuantity) => prevQuantity - 1);
     }
@@ -82,11 +82,11 @@ export function Card({
             </CoffeValue>
 
             <Counter>
-              <ButtonNegative onClick={decrementQuantity}>
+              <ButtonNegative onClick={decreaseQuantity}>
                 <Minus size={14} color="purple" />
               </ButtonNegative>
               <span>{quantity}</span>
-              <ButtonPositive onClick={incrementQuantity}>
+              <ButtonPositive onClick={increaseQuantity}>
                 <Plus size={14} color="purple" />
               </ButtonPositive>
             </Counter>
