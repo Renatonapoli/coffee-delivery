@@ -60,4 +60,29 @@ export const Cart = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  div {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 4.5rem;
+    top: 1.5rem;
+
+    border-radius: 1000px;
+    background: ${(props) => props.theme["yellow-dark"]};
+
+    span {
+      color: var(--base-white, #fff);
+      text-align: center;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: -0.72px;
+    }
+  }
 `;

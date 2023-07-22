@@ -14,6 +14,9 @@ export function Navbar() {
           </Map>
           <Cart>
             <ShoppingCart size={22} color="#C47f17" weight="fill" />
+            <div>
+              <span>0</span>
+            </div>
           </Cart>
         </ContainerLocationCart>
       </div>
