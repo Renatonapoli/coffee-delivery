@@ -31,7 +31,6 @@ export const Header = styled.header`
 `;
 
 export const CardInformations = styled.div`
-  position: relative;
   display: flex;
   margin-top: 2.5rem;
   width: 27.875rem;
@@ -41,25 +40,8 @@ export const CardInformations = styled.div`
   align-items: flex-start;
   gap: 32px;
 
-  border-radius: 6px 36px 6px 36px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    border-radius: 6px 36px 6px 36px;
-    border: 1px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(
-      to right,
-      ${(props) => props.theme.yellow},
-      ${(props) => props.theme.purple}
-    );
-    pointer-events: none;
-  }
+  border-radius: 6px 32px 6px 32px;
+  border: 1px solid;
 `;
 
 export const Section = styled.section`
