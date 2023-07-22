@@ -18,6 +18,7 @@ import {
   IceCream,
   Container,
 } from "./styles";
+import { useState } from "react";
 
 interface PropsCard {
   src: string;
@@ -42,6 +43,17 @@ export function Card({
   coin,
   price,
 }: PropsCard) {
+  const [quantity, setQuantity] = useState(0);
+
+  const incrementQuantity = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  const decrementQuantity = () => {
+    if (quantity > 0) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    }
+  };
   return (
     <Container>
       <CardContainer>
@@ -70,11 +82,11 @@ export function Card({
             </CoffeValue>
 
             <Counter>
-              <ButtonNegative>
+              <ButtonNegative onClick={decrementQuantity}>
                 <Minus size={14} color="purple" />
               </ButtonNegative>
-              <span>1</span>
-              <ButtonPositive>
+              <span>{quantity}</span>
+              <ButtonPositive onClick={incrementQuantity}>
                 <Plus size={14} color="purple" />
               </ButtonPositive>
             </Counter>
