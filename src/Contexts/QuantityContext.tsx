@@ -1,37 +1,18 @@
-import React, { createContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 interface QuantityContextData {
-  quantity: number;
-  setQuantity: React.Dispatch<React.SetStateAction<number>>;
+  quantities: { [key: string]: number };
+  updateQuantity: (cardId: string, quantity: number) => void;
   totalQuantity: number;
-  updateTotalQuantity: (amount: number) => void;
 }
 
 const QuantityContext = createContext<QuantityContextData>({
-  quantity: 0,
-  setQuantity: () => {},
+  quantities: {},
+  updateQuantity: () => {},
   totalQuantity: 0,
-  updateTotalQuantity: () => {},
 });
 
 export function QuantityProvider({ children }: { children: React.ReactNode }) {
-  const [quantity, setQuantity] = useState<number>(0);
-  const [totalQuantity, setTotalQuantity] = useState<number>(0);
-
-  const updateTotalQuantity = (amount: number) => {
-    setTotalQuantity((prevTotal) => prevTotal + amount);
-  };
-
-  return (
-    <QuantityContext.Provider
-      value={{ quantity, setQuantity, totalQuantity, updateTotalQuantity }}
-    >
-      {children}
-    </QuantityContext.Provider>
-  );
-}
-
-export function useQuantity() {
   const [quantities, setQuantities] = useState<{ [key: string]: number }>({});
 
   const updateQuantity = (cardId: string, quantity: number) => {
@@ -41,9 +22,26 @@ export function useQuantity() {
     }));
   };
 
-  const totalQuantity = useMemo(() => {
-    return Object.values(quantities).reduce((sum, qty) => sum + qty, 0);
-  }, [quantities]);
+  const totalQuantity = Object.values(quantities).reduce(
+    (sum, qty) => sum + qty,
+    0
+  );
 
-  return { quantities, updateQuantity, totalQuantity };
+  return (
+    <QuantityContext.Provider
+      value={{ quantities, updateQuantity, totalQuantity }}
+    >
+      {children}
+    </QuantityContext.Provider>
+  );
+}
+
+export function useQuantity() {
+  const context = useContext(QuantityContext);
+
+  if (!context) {
+    throw new Error("Ops, deu ruim. Tente novamente.");
+  }
+
+  return context;
 }

@@ -1,3 +1,4 @@
+import { useQuantity } from "../../../../Contexts/QuantityContext";
 import { ShoppingCart, Plus, Minus } from "@phosphor-icons/react";
 import {
   Alcoholic,
@@ -18,7 +19,6 @@ import {
   IceCream,
   Container,
 } from "./styles";
-import { useQuantity } from "../../../../Contexts/QuantityContext";
 
 interface PropsCard {
   src: string;
