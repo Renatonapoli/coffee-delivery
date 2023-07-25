@@ -79,6 +79,7 @@ export function Home() {
       <h2>Nossos Cafés</h2>
       <ContainerCards>
         <Card
+          cardId="card1"
           src={CoffeExpress}
           traditional={"Tradicional"}
           typeCoffe={"Expresso Tradicional"}
@@ -91,6 +92,7 @@ export function Home() {
         />
 
         <Card
+          cardId="card2"
           src={CoffeAmerican}
           traditional={"Tradicional"}
           typeCoffe={"Expresso Americano"}
@@ -102,6 +104,7 @@ export function Home() {
           alcoholic={""}
         />
         <Card
+          cardId="card3"
           src={CoffeCreamy}
           traditional={"Tradicional"}
           typeCoffe={"Expresso Cremoso"}
@@ -113,6 +116,7 @@ export function Home() {
           alcoholic={""}
         />
         <Card
+          cardId="card4"
           src={CoffeIceCream}
           traditional={"Tradicional"}
           iceCream={"Gelado"}
@@ -124,6 +128,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card5"
           src={CoffeWithMilk}
           traditional={"Tradicional"}
           iceCream={"Com Leite"}
@@ -135,6 +140,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card6"
           src={Latte}
           traditional={"Tradicional"}
           iceCream={"Com Leite"}
@@ -146,6 +152,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card7"
           src={Capuccino}
           traditional={"Tradicional"}
           iceCream={"Com Leite"}
@@ -157,6 +164,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card8"
           src={Macchiato}
           traditional={"Tradicional"}
           iceCream={"Com Leite"}
@@ -168,6 +176,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card9"
           src={Mocaccino}
           traditional={"Tradicional"}
           iceCream={"Com Leite"}
@@ -179,6 +188,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card10"
           src={HotChocolate}
           traditional={"Especial"}
           iceCream={"Com Leite"}
@@ -190,6 +200,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card11"
           src={Cuban}
           traditional={"Especial"}
           alcoholic={"Alcoólico"}
@@ -201,6 +212,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card12"
           src={Hawaiian}
           traditional={"Especial"}
           iceCream={""}
@@ -212,6 +224,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card13"
           src={Arabic}
           traditional={"Especial"}
           iceCream={""}
@@ -223,6 +236,7 @@ export function Home() {
           price={"9,90"}
         />
         <Card
+          cardId="card14"
           src={Irish}
           traditional={""}
           iceCream={"Especial"}

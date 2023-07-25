@@ -18,7 +18,7 @@ import {
   IceCream,
   Container,
 } from "./styles";
-import { useState } from "react";
+import { useQuantity } from "../../../../Contexts/QuantityContext";
 
 interface PropsCard {
   src: string;
@@ -32,7 +32,12 @@ interface PropsCard {
   price: string;
 }
 
+interface CardProps extends PropsCard {
+  cardId: string;
+}
+
 export function Card({
+  cardId,
   src,
   traditional,
   iceCream,
@@ -42,16 +47,17 @@ export function Card({
   subfraseCoffe,
   coin,
   price,
-}: PropsCard) {
-  const [quantity, setQuantity] = useState(0);
+}: CardProps) {
+  const { quantities, updateQuantity } = useQuantity();
+  const quantity = quantities[cardId] || 0;
 
   const increaseQuantity = () => {
-    setQuantity((prevQuantity) => prevQuantity + 1);
+    updateQuantity(cardId, quantity + 1);
   };
 
   const decreaseQuantity = () => {
     if (quantity > 0) {
-      setQuantity((prevQuantity) => prevQuantity - 1);
+      updateQuantity(cardId, quantity - 1);
     }
   };
   return (

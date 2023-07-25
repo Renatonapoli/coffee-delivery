@@ -1,8 +1,11 @@
 import { ShoppingCart, MapPin } from "@phosphor-icons/react";
-
+import { useQuantity } from "../../Contexts/QuantityContext";
 import { ContainerNavbar, ContainerLocationCart, Map, Cart } from "./styles";
 
-export function Navbar() {
+interface NavbarProps {}
+
+export function Navbar({}: NavbarProps) {
+  const { totalQuantity } = useQuantity();
   return (
     <ContainerNavbar>
       <div>
@@ -15,7 +18,7 @@ export function Navbar() {
           <Cart>
             <ShoppingCart size={22} color="#C47f17" weight="fill" />
             <div>
-              <span>0</span>
+              <span>{totalQuantity}</span>
             </div>
           </Cart>
         </ContainerLocationCart>

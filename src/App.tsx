@@ -1,19 +1,23 @@
-import { ThemeProvider } from 'styled-components'
-import {BrowserRouter} from 'react-router-dom'
-import { Router } from "./Router"
+import { ThemeProvider } from "styled-components";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router";
 
-import { GlobalStyle } from './styles/global'; 
-import { defaultTheme } from './styles/themes/default';
+import { GlobalStyle } from "./styles/global";
+import { defaultTheme } from "./styles/themes/default";
+import { QuantityProvider } from "./Contexts/QuantityContext";
 
-export function App () {
+export function App() {
   return (
     <div>
       <ThemeProvider theme={defaultTheme}>
-        <BrowserRouter>
-          <Router />
-        </BrowserRouter>
+        <QuantityProvider>
+          <BrowserRouter>
+            <Router />
+          </BrowserRouter>
+        </QuantityProvider>
+
         <GlobalStyle />
       </ThemeProvider>
     </div>
-    )
-} 
+  );
+}
