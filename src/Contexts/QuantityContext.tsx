@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import { ReactNode, createContext, useContext, useState } from "react";
 
 interface QuantityContextData {
   quantities: { [key: string]: number };
@@ -12,7 +12,11 @@ const QuantityContext = createContext<QuantityContextData>({
   totalQuantity: 0,
 });
 
-export function QuantityProvider({ children }: { children: React.ReactNode }) {
+interface QuantityContextChildren {
+  children: ReactNode;
+}
+
+export function QuantityProvider({ children }: QuantityContextChildren) {
   const [quantities, setQuantities] = useState<{ [key: string]: number }>({});
 
   const updateQuantity = (cardId: string, quantity: number) => {
